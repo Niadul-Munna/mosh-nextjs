@@ -9,7 +9,9 @@ const Userpage = async () => {
   const user: User[] = await res.json();
   return (
     <div>
-      <h1>Users List</h1>
+      <h1 className="inline-flex text-2xl items-center justify-center w-full">
+        Users List
+      </h1>
       <ul className="bg-blue-300 ">
         {user.map((user) => (
           <li
